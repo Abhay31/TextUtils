@@ -48,6 +48,7 @@ export default function TextForm(props) {
       <div className='container' style={{color: props.mode=== 'dark'?'white':'#042743'}}>
         <h1>{props.heading}</h1>
         <div className="mb-3">
+        //grammarlyeditor
           <GrammarlyEditorPlugin clientId="client_PL9HoLjJmYkZvzFB4H3Ape">
             <textarea className="form-control" value={text} placeholder="Enter Your Text Here" onChange={handleOnChange} style={{backgroundColor: props.mode=== 'light'?'white':'grey', color: props.mode=== 'dark'?'white':'#042743'}} id="myBox" rows="8"></textarea>
           </GrammarlyEditorPlugin>
